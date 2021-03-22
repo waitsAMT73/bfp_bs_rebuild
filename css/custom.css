@@ -1,0 +1,178 @@
+/*SASS settings*/
+/*allow you to see the grids*/
+[class*="col"] {
+--padding: 1rem;
+--background-color: #33b5e5;
+--border: 2px solid #fff;
+--color: #fff;
+text-align: center;
+}
+[class*="con"] {
+--padding: 1rem;
+--background-color: #9e33e5;
+--border: 2px solid #fff;
+--color: #fff;
+text-align: center; 
+}
+/*End of SASS Settings*/
+
+body {
+	font-family: 'Barlow',sans-serif !important; 
+	-webkit-font-smoothing: antialiased;
+	min-height: 75rem;
+	padding-top: 6rem;
+	--font-weight: 200;
+	color: #404e5c;
+}
+
+h1 {
+	font-family: 'Barlow',sans-serif !important; 
+}
+
+a {
+    color: #ea993c;
+}
+
+a:hover {
+  color: #ea993c; !important;
+}
+
+/*Navigation Section*/
+.navbar-light .navbar-nav .nav-link {
+    color: #000000;
+    font-size: .9rem;
+    font-weight: 200;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #ea993c; !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ea993c; !important;
+}
+/*End of Navigation section*/
+
+.hptitle {
+	color: #FFFFFF;
+    --font-size: 48px;
+    --font-weight: 400;
+    line-height: 1em;
+    word-wrap: break-word;
+}
+
+.tagline {
+    color: #ffffff;
+    font-family: "Petit Formal Script", Sans-serif;
+    letter-spacing: 1.3px;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #eaaa61;
+    border-color: #eaaa61;
+}
+
+.btn-primary:hover {
+    color: #ffffff;
+    background-color: #ea993c;
+    border-color: #ea993c;
+}
+
+.bringtofront {
+	z-index: 10;
+}
+
+.circleimage {
+	border-style: solid;
+    border-color: #EAAA61;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.rndedges {
+	border-radius: 25px;
+}
+
+.mb_parallax_overlay {
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+	background-color: #000000;
+	opacity: 0.50;
+	transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+
+}
+
+.parallax {
+	overflow: hidden; 
+	position: relative; 
+	width: 100%; 
+	background-attachment: fixed; 
+	background-size: cover; 
+	-moz-background-size: cover; 
+	-webkit-background-size: cover; 
+	background-repeat: no-repeat; 
+	background-position: top center;
+}
+
+#pllax1 {
+	background-image: url(../images/parallax.jpg); 
+}
+
+#pllax2 {
+	background-image: url(../images/doctors-office-01-small.jpg); 
+}
+
+#pllax3 {
+	background-image: url(../images/blessington_bridge.jpg); 
+}
+
+#pllax3overlay {
+	background-color: #FFFFFF;
+	opacity: 0.70;
+}
+
+.themeOranglebkgrd {
+	background-color: #eaaa61;
+}
+
+.badgemargin {
+	margin-top: -30px;
+}
+
+.picshadow {
+	box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 50%);
+	border-radius: 15px 15px 15px 15px;
+}
+
+/*animations*/
+.w3-animate-zoom {
+    animation: animatezoom 1s
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.w3-animate-fading {
+    animation: fading 2s;
+    --infinite
+}
+
+@keyframes fading {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+
