@@ -117,6 +117,17 @@ a:hover {
 	background-position: top center;
 }
 
+/* ===== Style for smartphone and iPad in portrait & landscape== =  */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 1024px) {
+  .parallax {
+    --background-attachment: inherit;
+    background-attachment: unset !important;
+    background-position: center top !important;
+  }
+}
+
 #pllax1 {
 	background-image: url(../images/parallax.jpg); 
 }
@@ -174,5 +185,8 @@ a:hover {
         opacity: 1
     }
 }
+
+
+
 
 
