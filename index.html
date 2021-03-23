@@ -307,11 +307,18 @@
 		        <div class="col-md-10">
 		            <div class="row justify-content-center">
 		                <div class="col-md-auto">		                    
-							<picture>
-							    <source media="(min-width:650px)" srcset="images/home_main_st_blessington.jpg">
-							    <source media="(min-width:465px)" srcset="images/home_main_st_blessington_300.jpg">
-							    <img src="images/home_main_st_blessington.jpg" loading="lazy" class="image-fluid picshadow" alt="Blessington Clinic" style="width:auto;">
-							</picture>		                    
+							<img 
+							width="100%" 
+							 
+							alt="Blessington Doctor Main Street" 
+							loading="lazy" 
+							class="image-fluid picshadow" 
+							src="images/home_main_st_blessington.jpg" 
+							sizes="(max-width: 500px) 100vw, 500px" 
+							srcset="
+							images/home_main_st_blessington.jpg 500w, 
+							images/home_main_st_blessington_300.jpg 300w, 
+							">		                    
 		                </div>
 		                <div class="col-md my-auto">
 	                        <h4 class="text-center fw-bold p-2">Blessington Family Practice</h4>
@@ -336,7 +343,7 @@
 	                        <picture>
 							    <source media="(min-width:650px)" srcset="images/home_ballymore.jpg">
 							    <source media="(min-width:465px)" srcset="images/home_ballymore_300.jpg">
-							    <img src="images/home_ballymore.jpg" loading="lazy" class="image-fluid picshadow" alt="Ballymore Eustace Clinic" style="width:auto;">
+							    <img src="images/home_ballymore.jpg" loading="lazy" class="image-fluid picshadow" alt="Ballymore Eustace Clinic">
 							</picture>
 		                </div>
 		            </div>
@@ -392,8 +399,7 @@
 	images/home_Main-Street-Blessington-1536x962.jpg 1536w, 
 	images/home_Main-Street-Blessington-2048x1283.jpg 2048w"> -->
 
-
-
+	
 
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
