@@ -60,54 +60,8 @@
 
   <body>
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top px-5 py-3 border-bottom border-warning" aria-label="BFP navbars">
-	  <div class="container-fluid">
-
-		<img 
-	    width="150" 
-	    height="60" 
-	    alt="Blessington Family Practice" 
-	    data-srcset="images/icons/Logo_and_title-150x60.png 1x, images/icons/Logo_and_title.png 2x" 
-	    sizes="(max-width: 150px) 100vw, 150px" 
-	    data-src="images/icons/Logo_and_title-150x60.png" 
-	    src="images/icons/Logo_and_title-150x60.png" 
-	    loading="lazy" 
-	    srcset="images/icons/Logo_and_title-150x60.png 1x, images/icons/Logo_and_title.png 2x">
-
-	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsBFP" aria-controls="navbarsBFP" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
-
-	    <div class="collapse navbar-collapse justify-content-md-center" id="navbarsBFP">
-	      <ul class="navbar-nav">
-	        <li class="nav-item px-2">
-	          <a class="nav-link active" aria-current="page" href="#">Home</a>
-	        </li>
-	        <li class="nav-item px-2">
-	          <a class="nav-link" href="#">Services</a>
-	        </li>
-	        <li class="nav-item px-2">
-	          <a class="nav-link" href="#">Our Team</a>
-	        </li>
-	        <li class="nav-item px-2">
-	          <a class="nav-link" href="#">Info</a>
-	        </li>
-	        <li class="nav-item px-2">
-	          <a class="nav-link" href="#">News</a>
-	        </li>
-	        <li class="nav-item px-2">
-	          <a class="nav-link" href="#">Opening Hours</a>
-	        </li>
-	        <li class="nav-item px-2">
-	          <a class="nav-link" href="#">Contact Us</a>
-	        </li>
-	        <li class="nav-item px-2">
-		      <a class="btn btn-primary px-4" href="tel:045865527" target="_self">Call Us</a>
-	    	</li>
-	      </ul>
-	    </div>
-	  </div>
-	</nav>
+	<!-- include the navigation header section -->
+  	<div w3-include-html="header.html"></div>
 
 	<div class="parallax py-4" id="pllax1">
 	    <div class="mb_parallax_overlay py-4"></div>
@@ -356,9 +310,6 @@
 		    </div>
 		<!-- </div> -->
 
-
-
-
 	    <div class="row justify-content-center g-0">
 	        <div class="col my-auto pt-3">
 	            <h5 class="text-center fw-bold py-5">Out of hours GP service is provided by Kildare West Wicklow Doctors on Call (KDOC).  KDOC may be contacted on 045 848 701 to avail of its service.  Please see the KDOC website for additional information at <a href="https://www.kdoc.ie">https://www.kdoc.ie</a></h5>
@@ -366,18 +317,8 @@
 	    </div>
 	</div> <!-- container -->
 		
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col g-0">
-				<img src="images/icons/badge.png" loading="lazy" class="image-fluid badgemargin" alt="Blessington Family Practice Badge">
-				<p class="p-2">Copyright © 2021 Blessington Family Practice. All rights reserved.</p>
-				<div class="pb-5">
-					<small><a href="/privacy-policy/">Privacy Policy</a> – <a href="/cookie-declaration/">Cookie Declaration</a></small>
-				</div>
-				<div class="p-2 themeOranglebkgrd"></div>
-			</div>
-		</div>
-	</div>
+	<!-- include the footer section -->
+  	<div w3-include-html="footer.html"></div>
 
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
