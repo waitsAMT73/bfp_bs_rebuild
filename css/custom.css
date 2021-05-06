@@ -13,6 +13,8 @@ text-align: center;
 --border: 1px solid #fff;
 --color: #fff;
 text-align: center; 
+/*make the container position relative or the links/buttons won't work on the overlay*/
+position: relative;
 }
 /*End of SASS Settings*/
 
@@ -27,6 +29,10 @@ body {
 
 h1 {
 	font-family: 'Barlow',sans-serif !important; 
+}
+
+h5 {
+    font-weight: 800;
 }
 
 a {
@@ -79,9 +85,9 @@ a:hover {
     border-color: #ea993c;
 }
 
-.bringtofront {
+/*.bringtofront {
 	z-index: 10;
-}
+}*/
 
 .circleimage {
 	border-style: solid;
@@ -102,6 +108,7 @@ a:hover {
 	background-color: #000000;
 	opacity: 0.50;
 	transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+	--z-index: -1;
 
 }
 
@@ -114,7 +121,8 @@ a:hover {
 	-moz-background-size: cover; 
 	-webkit-background-size: cover; 
 	background-repeat: no-repeat; 
-	background-position: top center;
+	background-position: center center;
+	--z-index: -2;
 }
 
 /* ===== Style for smartphone and iPad in portrait & landscape== =  */
@@ -144,6 +152,7 @@ and (max-device-width : 1024px) {
 	background-color: #FFFFFF;
 	opacity: 0.70;
 }
+
 
 .themeOranglebkgrd {
 	background-color: #eaaa61;
