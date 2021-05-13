@@ -125,6 +125,11 @@ a:hover {
 	--z-index: -2;
 }
 
+/*opening hours card*/
+.ohcard:hover {
+  border: 1px solid #ea993c;
+}
+
 /* ===== Style for smartphone and iPad in portrait & landscape== =  */
 @media only screen 
 and (min-device-width : 320px) 
@@ -153,6 +158,9 @@ and (max-device-width : 1024px) {
 	opacity: 0.70;
 }
 
+#pllaxforms {
+    background-image: url(../images/doctors-useful-forms.jpg); 
+}
 
 .themeOranglebkgrd {
 	background-color: #eaaa61;
@@ -194,6 +202,7 @@ and (max-device-width : 1024px) {
         opacity: 1
     }
 }
+
 
 
 
