@@ -50,7 +50,7 @@ function handleIntersect(entries, observer) {
 // CODE THAT WILL INCLUDE ONE HTML PAGE INSIDE ANOTHER 
 // NOTE THIS WILL ONLY WORK ON THE SERVER
 function incHTMLFile() {
-  var z, i, elmnt, file, xhttp;
+  var z, i, elmnt, file, pageHeading, xhttp;
   /* Loop through a collection of all HTML elements: */
   z = document.getElementsByTagName("*");
   for (i = 0; i < z.length; i++) {
@@ -58,7 +58,11 @@ function incHTMLFile() {
     /*search for elements with a certain atrribute:*/
     file = elmnt.getAttribute("custom-inc-html");
     if (file) {
+
       //console.log(file);
+      // if there is a pageHeading attribute get it //
+      pageHeading = elmnt.getAttribute("pageHeadingVar");
+
       /* Make an HTTP request using the attribute value as the file name: */
       xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
@@ -76,5 +80,13 @@ function incHTMLFile() {
       return;
     }
   }
+
+  // if there is a pageHeading attribute fill it //
+  if (pageHeading) {
+    window.document.getElementById("pageHeadingDiv").innerText = pageHeading;
+  }
+
 }
 incHTMLFile();
+
+
