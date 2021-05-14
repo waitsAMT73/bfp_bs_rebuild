@@ -8,9 +8,12 @@ var arrAnimAdded = [];
 
 // Set things up
 window.addEventListener("load", (event) => {
-  animatedElements = document.getElementsByClassName("animation-element");
 
+  animatedElements = document.getElementsByClassName("animation-element");
   createObserver();
+
+  incHTMLFile();
+
 }, false);
 
 function createObserver() {
@@ -60,11 +63,13 @@ function incHTMLFile() {
     if (file) {
 
       // if there is a pageHeading attribute get it and fill it //
-      pageHeading = elmnt.getAttribute("pageHeadingVar");
-      if (pageHeading) {
-        window.document.getElementById("pageHeadingDiv").innerText = pageHeading;
-        console.log('got it');
-      }
+      // pageHeading = elmnt.getAttribute("pageHeadingVar");
+      // if (pageHeading) {
+      //   console.log('got it');
+      //   console.log(pageHeading);
+      //   window.document.getElementById("pageHeadingDiv").innerText = pageHeading;
+
+      // }
 
       /* Make an HTTP request using the attribute value as the file name: */
       xhttp = new XMLHttpRequest();
@@ -84,6 +89,6 @@ function incHTMLFile() {
     }
   }
 }
-incHTMLFile();
+
 
 
