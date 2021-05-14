@@ -14,6 +14,8 @@ window.addEventListener("load", (event) => {
 
   incHTMLFile();
 
+  setHeader();
+
 }, false);
 
 function createObserver() {
@@ -53,7 +55,7 @@ function handleIntersect(entries, observer) {
 // CODE THAT WILL INCLUDE ONE HTML PAGE INSIDE ANOTHER 
 // NOTE THIS WILL ONLY WORK ON THE SERVER
 function incHTMLFile() {
-  var z, i, elmnt, file, pageHeading, xhttp;
+  var z, i, elmnt, file, xhttp;
   /* Loop through a collection of all HTML elements: */
   z = document.getElementsByTagName("*");
   for (i = 0; i < z.length; i++) {
@@ -61,15 +63,6 @@ function incHTMLFile() {
     /*search for elements with a certain atrribute:*/
     file = elmnt.getAttribute("custom-inc-html");
     if (file) {
-
-      // if there is a pageHeading attribute get it and fill it //
-      // pageHeading = elmnt.getAttribute("pageHeadingVar");
-      // if (pageHeading) {
-      //   console.log('got it');
-      //   console.log(pageHeading);
-      //   window.document.getElementById("pageHeadingDiv").innerText = pageHeading;
-
-      // }
 
       /* Make an HTTP request using the attribute value as the file name: */
       xhttp = new XMLHttpRequest();
@@ -90,5 +83,15 @@ function incHTMLFile() {
   }
 }
 
+// set the variable page header //
+function setHeader() {
 
-
+  // if there is a pageHeading attribute get it and fill it //
+  ph = window.document.getElementById("pageHeadingVar");
+  if (ph) {
+    pageHeading = ph.getAttribute("pageHeadingVar");
+    console.log('got it');
+    console.log(pageHeading);
+    window.document.getElementById("pageHeadingDiv").innerText = pageHeading;
+  }
+}
