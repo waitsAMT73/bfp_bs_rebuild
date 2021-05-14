@@ -59,9 +59,12 @@ function incHTMLFile() {
     file = elmnt.getAttribute("custom-inc-html");
     if (file) {
 
-      //console.log(file);
-      // if there is a pageHeading attribute get it //
+      // if there is a pageHeading attribute get it and fill it //
       pageHeading = elmnt.getAttribute("pageHeadingVar");
+      if (pageHeading) {
+        window.document.getElementById("pageHeadingDiv").innerText = pageHeading;
+        console.log('got it');
+      }
 
       /* Make an HTTP request using the attribute value as the file name: */
       xhttp = new XMLHttpRequest();
@@ -80,12 +83,6 @@ function incHTMLFile() {
       return;
     }
   }
-
-  // if there is a pageHeading attribute fill it //
-  if (pageHeading) {
-    window.document.getElementById("pageHeadingDiv").innerText = pageHeading;
-  }
-
 }
 incHTMLFile();
 
