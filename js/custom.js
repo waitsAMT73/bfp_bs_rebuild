@@ -14,8 +14,6 @@ window.addEventListener("load", (event) => {
 
   incHTMLFile();
 
-  setHeader();
-
 }, false);
 
 function createObserver() {
@@ -83,18 +81,4 @@ function incHTMLFile() {
   }
 }
 
-// set the variable page header //
-function setHeader() {
 
-  // if there is a pageHeading attribute get it and fill it //
-  ph = window.document.getElementById("pageHeadingVar");
-  alert(ph);
-  if (ph) {
-    pageHeading = ph.getAttribute("pageHeadingVar");
-    console.log('got it');
-    console.log(pageHeading);
-    window.document.getElementById("pageHeadingDiv").innerText = pageHeading;
-  } else {
-    console.log('couldnt find it');
-  }
-}
