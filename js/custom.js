@@ -13,7 +13,6 @@ window.addEventListener("load", (event) => {
   createObserver();
 
   //incHTMLFile();
-  incHTMLFilesFetch();
 
 }, false);
 
@@ -116,4 +115,5 @@ function incHTMLFilesFetch() {
 
   });
 }
+incHTMLFilesFetch();
 
