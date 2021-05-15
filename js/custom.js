@@ -12,7 +12,8 @@ window.addEventListener("load", (event) => {
   animatedElements = document.getElementsByClassName("animation-element");
   createObserver();
 
-  incHTMLFile();
+  //incHTMLFile();
+  incHTMLFilesFetch();
 
 }, false);
 
@@ -81,4 +82,38 @@ function incHTMLFile() {
   }
 }
 
+// function incHTMLFileFetch() {
+//   fetch("./header.html")
+//   .then(response => {
+//     return response.text()
+//   })
+//   .then(data => {
+//     document.querySelector("header").innerHTML = data;
+//   })
+//   .catch(error => {
+//   console.log('Error:', error);
+// });
+// }
+
+function incHTMLFilesFetch() {
+
+  const includes = document.getElementsByTagName('custominclude');
+
+  [].forEach.call(includes, i => {
+      let filePath = i.getAttribute('src');
+      
+      fetch(filePath)
+      .then(file => {
+        return file.text()
+      })
+      .then(content => {
+        i.insertAdjacentHTML('afterend', content);
+        i.remove();
+      })
+      .catch(error => {
+        console.log('Error:', error);
+      });
+
+  });
+}
 
