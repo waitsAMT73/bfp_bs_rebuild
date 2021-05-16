@@ -15,9 +15,6 @@ window.addEventListener("load", (event) => {
   //incHTMLFile();
   incHTMLFilesFetch();
 
-  
-
-
 }, false);
 
 function createObserver() {
@@ -117,19 +114,15 @@ function incHTMLFilesFetch() {
         // Parse the text
         var doc = parser.parseFromString(content, "text/html");
 
-        // You can now even select part of that html as you would in the regular DOM 
-        // Example:
-        // var docArticle = doc.querySelector('article').innerHTML;
-
-        //console.log(doc);
-
-        fndit = doc.getElementById("navbarsBFP");
-        console.log(fndit);
-        fndit2 = doc.querySelector("#navbarsBFP");
-        console.log(fndit2);
+        isHeader = doc.getElementById("pageHeadingDiv");
+        if (isHeader) {
+          console.log(isHeader);
+          isHeader.innerText = "well hello";
+        }
 
         i.insertAdjacentHTML('afterend', content);
         i.remove();
+
       })
       .catch(error => {
         console.log('Error:', error);
