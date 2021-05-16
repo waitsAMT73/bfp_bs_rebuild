@@ -18,6 +18,8 @@ window.addEventListener("load", (event) => {
   fndit = document.getElementById("navbarsBFP");
   console.log(fndit);
 
+  // lalkd
+
 }, false);
 
 function createObserver() {
