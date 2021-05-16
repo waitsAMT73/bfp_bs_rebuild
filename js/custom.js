@@ -15,10 +15,7 @@ window.addEventListener("load", (event) => {
   //incHTMLFile();
   incHTMLFilesFetch();
 
-  fndit = document.getElementById("navbarsBFP");
-  console.log(fndit);
-  fndit2 = document.querySelector("#navbarsBFP");
-  console.log(fndit2);
+  
 
 
 }, false);
@@ -113,6 +110,24 @@ function incHTMLFilesFetch() {
         return file.text()
       })
       .then(content => {
+
+        // Initialize the DOM parser
+        var parser = new DOMParser();
+
+        // Parse the text
+        var doc = parser.parseFromString(content, "text/html");
+
+        // You can now even select part of that html as you would in the regular DOM 
+        // Example:
+        // var docArticle = doc.querySelector('article').innerHTML;
+
+        //console.log(doc);
+
+        fndit = doc.getElementById("navbarsBFP");
+        console.log(fndit);
+        fndit2 = doc.querySelector("#navbarsBFP");
+        console.log(fndit2);
+
         i.insertAdjacentHTML('afterend', content);
         i.remove();
       })
