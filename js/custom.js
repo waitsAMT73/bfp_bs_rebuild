@@ -17,8 +17,9 @@ window.addEventListener("load", (event) => {
 
   fndit = document.getElementById("navbarsBFP");
   console.log(fndit);
+  fndit2 = document.querySelector("#navbarsBFP");
+  console.log(fndit2);
 
-  // lalkd
 
 }, false);
 
