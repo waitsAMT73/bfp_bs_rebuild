@@ -15,6 +15,9 @@ window.addEventListener("load", (event) => {
   //incHTMLFile();
   incHTMLFilesFetch();
 
+  fndit = document.getElementById("navbarsBFP");
+  console.log(fndit);
+
 }, false);
 
 function createObserver() {
