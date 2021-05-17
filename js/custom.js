@@ -108,7 +108,9 @@ function incHTMLFilesFetch() {
       })
       .then(content => {
 
-        var repContent = content.replace("Page Heading", "ta daaaa");
+        if (i.getAttribute("pgHeading")) {
+          content = content.replace("Page Heading", pgHeading);
+        }
 
         i.insertAdjacentHTML('afterend', repContent);
         i.remove();
