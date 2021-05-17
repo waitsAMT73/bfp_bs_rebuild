@@ -109,10 +109,10 @@ function incHTMLFilesFetch() {
       .then(content => {
 
         if (i.getAttribute("pgHeading")) {
-          content = content.replace("Page Heading", pgHeading);
+          content = content.replace("Page Heading", i.getAttribute("pgHeading"));
         }
 
-        i.insertAdjacentHTML('afterend', repContent);
+        i.insertAdjacentHTML('afterend', content);
         i.remove();
 
       })
