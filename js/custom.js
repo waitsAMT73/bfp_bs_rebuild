@@ -120,7 +120,7 @@ function incHTMLFilesFetch() {
           isHeader.innerText = "well hello";
         }
 
-        i.insertAdjacentHTML('afterend', content);
+        i.insertAdjacentHTML('afterend', doc);
         i.remove();
 
       })
