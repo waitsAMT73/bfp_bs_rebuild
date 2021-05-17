@@ -12,7 +12,7 @@ window.addEventListener("load", (event) => {
   animatedElements = document.getElementsByClassName("animation-element");
   createObserver();
 
-  incHTMLFile();
+  //incHTMLFile();
   //incHTMLFilesFetch();
 
 }, false);
@@ -56,7 +56,7 @@ function handleIntersect(entries, observer) {
 function incHTMLFile() {
   var z, i, elmnt, file, xhttp;
   /* Loop through a collection of all HTML elements: */
-  z = document.getElementsByTagName("*");
+  z = document.getElementsByTagName("custominclude");
   for (i = 0; i < z.length; i++) {
     elmnt = z[i];
     /*search for elements with a certain atrribute:*/
@@ -81,6 +81,7 @@ function incHTMLFile() {
     }
   }
 }
+incHTMLFile();
 
 function incHTMLFilesFetch() {
 
