@@ -49,22 +49,8 @@
 
 <body>
     <!-- include the navigation header section -->
-    <div custom-inc-html="header.html"></div>
-    <div class="parallax pt-4" id="pllax1">
-        <div class="mb_parallax_overlay pt-4"></div>
-        <div class="container-fluid ">
-            <div class="row" style="min-height: 15vw;">
-                <div class="col-md-4 p-3 my-auto">
-                    <h1 class="hptitle">Useful Forms</h1>
-                </div>
-            </div> <!-- row -->
-            <div class="row justify-content-md-end px-5">
-                <div class="col-md-3 themeOranglebkgrd py-5">
-                    <h5 class="text-white">Telephone:<br><a class="text-white" href="tel:045865527">045 865 527</a></h5>
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container fluid -->
-    </div> <!-- parallax1 -->
+    <custominclude src="header.html"></custominclude>
+    <custominclude src="header-sub.html" pgHeading="Useful Forms"></custominclude>
 
     <div class="parallax" id="pllaxforms">
         <div class="container">
@@ -232,8 +218,10 @@
             <br><br><br>
         </div>
     </div>
+
     <!-- include the footer section -->
-    <div custom-inc-html="footer.html"></div>
+    <custominclude src="footer.html"></custominclude>
+
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script defer src="js/custom.js"></script>
 </body>
