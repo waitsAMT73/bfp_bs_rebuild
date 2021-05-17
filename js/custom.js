@@ -108,19 +108,9 @@ function incHTMLFilesFetch() {
       })
       .then(content => {
 
-        // Initialize the DOM parser
-        var parser = new DOMParser();
+        var repContent = content.replace("Page Heading", "ta daaaa");
 
-        // Parse the text
-        var doc = parser.parseFromString(content, "text/html");
-
-        isHeader = doc.getElementById("pageHeadingDiv");
-        if (isHeader) {
-          console.log(isHeader);
-          isHeader.innerText = "well hello";
-        }
-
-        i.insertAdjacentHTML('afterend', doc);
+        i.insertAdjacentHTML('afterend', repContent);
         i.remove();
 
       })
