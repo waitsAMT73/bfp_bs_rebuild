@@ -12,8 +12,8 @@ window.addEventListener("load", (event) => {
   animatedElements = document.getElementsByClassName("animation-element");
   createObserver();
 
-  //incHTMLFile();
-  incHTMLFilesFetch();
+  incHTMLFile();
+  //incHTMLFilesFetch();
 
 }, false);
 
@@ -81,19 +81,6 @@ function incHTMLFile() {
     }
   }
 }
-
-// function incHTMLFileFetch() {
-//   fetch("./header.html")
-//   .then(response => {
-//     return response.text()
-//   })
-//   .then(data => {
-//     document.querySelector("header").innerHTML = data;
-//   })
-//   .catch(error => {
-//   console.log('Error:', error);
-// });
-// }
 
 function incHTMLFilesFetch() {
 
