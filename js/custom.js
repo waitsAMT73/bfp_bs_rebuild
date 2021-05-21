@@ -9,11 +9,11 @@ var arrAnimAdded = [];
 // Set things up
 window.addEventListener("load", (event) => {
 
-  animatedElements = document.getElementsByClassName("animation-element");
-  createObserver();
-
   // include the header and footer //
   incHTMLFilesFetch();
+
+  animatedElements = document.getElementsByClassName("animation-element");
+  createObserver();
 
 }, false);
 
