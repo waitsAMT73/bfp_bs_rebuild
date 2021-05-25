@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/icons/favicon.png">
+
+    <meta name="robots" value="noindex" />
+
+    <title>Blessington Family Practice - Covid Vaccination Clinic Booking Page</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y5BC811F4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7Y5BC811F4');
+    </script>
+
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="7ea99b68-4fe1-4432-b2ac-0602635dd162" data-blockingmode="auto" type="text/javascript"></script> -->
+
+</head>
+
+<body>
+   
+    <a href="../index.html">
+        <img 
+        width="150" 
+        height="60" 
+        alt="Blessington Family Practice" 
+        data-srcset="../images/icons/Logo_and_title-150x60.png 1x, images/icons/Logo_and_title.png 2x" 
+        sizes="(max-width: 150px) 100vw, 150px" 
+        data-src="../images/icons/Logo_and_title-150x60.png" 
+        src="../images/icons/Logo_and_title-150x60.png" 
+        loading="lazy" 
+        srcset="../images/icons/Logo_and_title-150x60.png 1x, ../images/icons/Logo_and_title.png 2x">
+    </a>
+
+    <h1>Covid-19 Vaccination Clinic</h1>
+    <h4>IMPORTANT: please do not make any bookings for people who have not yet been invited to do so by their GP.<br>  Unsolicited bookings will be cancelled and may delay the vaccinaton of a person in a more vulnerable group.</h4>
+    <div><a href="faq.html" target="_blank">FAQ - please read carefully</a></div>
+
+    <hr>
+
+    <h4>Step 1: please confirm</h4>
+    
+    <form id="frmHH">
+
+    <div class="class1">
+    
+    <label class="container" for="bc1">I am a patient of Blessington Family Practice.
+        <input type="checkbox" name="booking_conditions" id="bc1" value="1">
+        <span class="checkmark"></span>
+    </label>
+    
+<!--     <label class="container" for="bc2">I am aged 70 or over.
+        <input type="checkbox" name="booking_conditions" id="bc2" value="2">
+        <span class="checkmark"></span>
+    </label> -->
+
+    <label class="container" for="bc3">I have been invited to make this booking by my GP.
+        <input type="checkbox" name="booking_conditions" id="bc3" value="3">
+        <span class="checkmark"></span>
+    </label> 
+    
+    <label class="container" for="bc4">I have read the <a href="https://www.hse.ie/eng/services/news/newsfeatures/covid19-updates/covid-19-vaccine-materials/covid-19-vaccine-information-leaflet-after-18-jan.pdf" target="_blank">patient information leaflet (click here to view)</a> and I am aware of the potential side effects (including chills, headache, temporary fatigue, muscle ache, injection site pain).
+        <input type="checkbox" name="booking_conditions" id="bc4" value="4">
+        <span class="checkmark"></span>
+    </label>
+
+    <label class="container" for="bc5">I will wear a short sleeved shirt/top on the day.
+        <input type="checkbox" name="booking_conditions" id="bc5" value="5">
+        <span class="checkmark"></span>
+    </label> 
+
+    <label class="container" for="bc6">The Vaccination Program consists of 2 separate vaccinations 4 weeks apart.  I understand I am now booking my 1st vaccine.
+        <input type="checkbox" name="booking_conditions" id="bc6" value="6">
+        <span class="checkmark"></span>
+    </label> 
+    
+
+    </div>  <!-- class1 -->
+
+    <hr>
+
+    <h4>Step 2: please answer</h4>
+
+    <div>Have you had Anaphylaxis (serious allergic reaction requiring medical intervention) following a previous dose of the vaccine or any of it’s constituents?
+    
+        <div class="radio-toolbar">
+        <input type="radio" id="anaYes" name="medical_conditions1" value="Yes" required>
+        <label for="anaYes">Yes, I have</label>
+        <input type="radio" id="anaNo" name="medical_conditions1" value="No" required>
+        <label for="anaNo">No, I haven't</label>
+        </div>
+
+    </div>
+
+    <div>Have you been diagnosed with Covid-19 within the last four weeks?
+    
+        <div class="radio-toolbar">
+        <input type="radio" id="covYes" name="medical_conditions2" value="Yes">
+        <label for="covYes">Yes, I have</label>
+        <input type="radio" id="covNo" name="medical_conditions2" value="No">
+        <label for="covNo">No, I haven't</label>
+        </div>
+
+    </div>
+
+    <div>Have you had another vaccine within the last 14 days?
+    
+        <div class="radio-toolbar">
+        <input type="radio" id="anoYes" name="medical_conditions3" value="Yes">
+        <label for="anoYes">Yes, I have</label>
+        <input type="radio" id="anoNo" name="medical_conditions3" value="No">
+        <label for="anoNo">No, I haven't</label>
+        </div>
+
+    </div>    
+
+    <div>Do you have a bleeding disorder or are you on anticoagulation therapy?
+    
+        <div class="radio-toolbar">
+        <input type="radio" id="bddisYes" name="medical_conditions4" value="Yes">
+        <label for="bddisYes">Yes, I have</label>
+        <input type="radio" id="bddisNo" name="medical_conditions4" value="No">
+        <label for="bddisNo">No, I haven't</label>
+        </div>
+
+    </div>  
+
+    <div>Are you less than 14 weeks or more than 33 weeks pregnant?
+    
+        <div class="radio-toolbar">
+        <input type="radio" id="pregYes" name="medical_conditions5" value="Yes">
+        <label for="pregYes">Yes, I am</label>
+        <input type="radio" id="pregNo" name="medical_conditions5" value="No">
+        <label for="pregNo">No, I'm not</label>
+        </div>
+
+    </div>  
+
+    <div>Important! You need a mobile number and email address to book your vaccination online so we can confirm your appointment details. Please check that your details are correct before booking.</div>
+
+    </form>
+
+    <form action="https://calendly.com/blessingtonfamilypractice/covid-19-vaccine-75" id="frmCldly">
+        <input type="hidden" id="primary_color" name="primary_color" value="e37f0b">
+    </form>
+    <!--<form action="booking.html" id="frmCldly"></form>-->
+    
+    <br>
+    <!-- <button class="button" onclick="return validateForm();">CONTINUE TO BOOKING</button><br> -->
+    <button class="button disabled">BOOKINGS UNAVAILABLE<br>PLEASE CHECK BACK LATER</button>
+
+
+    <br><br><br><br><br>
+    
+
+    <script type="text/javascript">  
+
+    function validateForm() { 
+        
+        var frmInputs = document.getElementsByName("booking_conditions");
+
+        for (var i = 0; i < frmInputs.length; i++) 
+        {
+            if (frmInputs[i].type == 'checkbox' && frmInputs[i].checked == false) {
+                alert("Please tick all of the tickboxes to proceed.");
+                return false;
+            } 
+        }
+
+        function validateMedCon(grpName) {
+            var rad = document.getElementsByName(grpName); 
+            if (rad[0].checked == false && rad[1].checked == false) 
+                return false;
+            else
+                return true;
+        }
+
+        function validateMedConYes(grpName) {
+            var rad = document.getElementsByName(grpName); 
+            if (rad[0].checked == true) 
+                return false;
+            else
+                return true;
+        }
+
+        if (validateMedCon('medical_conditions1') && validateMedCon('medical_conditions2') && validateMedCon('medical_conditions3') && validateMedCon('medical_conditions4') && validateMedCon('medical_conditions5')) {
+
+            if (validateMedConYes('medical_conditions1') && validateMedConYes('medical_conditions2') && validateMedConYes('medical_conditions3') && validateMedConYes('medical_conditions5')) 
+                document.getElementById("frmCldly").submit();
+             else 
+                alert('Based on your answers, you are not eligible for the vaccine at this time.');
+        }
+            else
+                alert('You must answer all of the questions.');
+    }
+
+    </script>
+
+    <div class="ftr">Copyright © 2021 Blessington Family Practice. All rights reserved.  <a href="../privacy-policy.html">Privacy Policy</a> & <a href="../cookie-declaration.html">Cookie Declaration</a></div>
+
+</body>
+
+</html>
