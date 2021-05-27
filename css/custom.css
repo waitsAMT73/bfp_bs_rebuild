@@ -21,7 +21,7 @@ position: relative;
 body {
 	font-family: 'Barlow',sans-serif !important; 
 	-webkit-font-smoothing: antialiased;
-	min-height: 75rem;
+	--min-height: 75rem;
 	padding-top: 6rem;
 	--font-weight: 200;
 	color: #404e5c;
