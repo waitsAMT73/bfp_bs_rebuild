@@ -44,11 +44,11 @@ a:hover {
 }
 
 /*Navigation Section*/
-.navbar-light .navbar-nav .nav-link {
+/*.navbar-light .navbar-nav .nav-link {
     color: #000000;
     font-size: .9rem;
     font-weight: 200;
-}
+}*/
 
 .navbar-light .navbar-nav .nav-link.active {
     color: #ea993c; !important;
