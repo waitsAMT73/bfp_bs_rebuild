@@ -139,6 +139,19 @@ and (max-device-width : 1024px) {
     background-attachment: unset !important;
     background-position: center top !important;
   }
+
+  #pllax1 {
+    background-image: url(../images/parallax-mobile.jpg) !important; 
+    }
+
+  #pllax2 {
+    background-image: url(../images/doctors-office-humanity-mobile.jpg) !important; 
+    }
+
+  #pllax3 {
+    background-image: url(../images/blessington_bridge-mobile.jpg) !important; 
+    }
+
 }
 
 #pllax1 {
@@ -146,12 +159,15 @@ and (max-device-width : 1024px) {
 }
 
 #pllax2 {
-	background-image: url(../images/doctors-office-01-small.jpg); 
+	background-image: url(../images/doctors-office-humanity.jpg); 
 }
 
 #pllax3 {
 	background-image: url(../images/blessington_bridge.jpg); 
 }
+
+
+
 
 #pllax3overlay {
 	background-color: #FFFFFF;
