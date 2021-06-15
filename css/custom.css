@@ -152,6 +152,10 @@ and (max-device-width : 1024px) {
     background-image: url(../images/blessington_bridge-mobile.jpg) !important; 
     }
 
+  #pllaxforms {
+    background-image: url(../images/doctors-useful-forms-mobile.jpg) !important; 
+}
+
 }
 
 #pllax1 {
