@@ -93,6 +93,7 @@ a:hover {
 	border-style: solid;
     border-color: #EAAA61;
     border-radius: 50px 50px 50px 50px;
+    max-width: 80px;
 }
 
 .rndedges {
