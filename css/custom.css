@@ -18,6 +18,20 @@ position: relative;
 }
 /*End of SASS Settings*/
 
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
 body {
 	font-family: 'Barlow',sans-serif !important; 
 	-webkit-font-smoothing: antialiased;
@@ -129,6 +143,14 @@ a:hover {
 /*opening hours card*/
 .ohcard:hover {
   border: 1px solid #ea993c;
+}
+
+.mw-50 {
+    max-width: 50px;
+}
+
+.mw-30 {
+    max-width:30%;
 }
 
 /* ===== Style for smartphone and iPad in portrait & landscape== =  */

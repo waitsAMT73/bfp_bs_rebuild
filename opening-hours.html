@@ -17,9 +17,9 @@
 
         <!-- Preload scripts and the parallax image -->
     <link rel="preload" as="image" imagesrcset="images/parallax.jpg 2000w, images/parallax-mobile.jpg 600w" imagesizes="100vw">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Petit Formal Script&display=swap" as="style" onload="this.rel = 'stylesheet'">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Barlow&display=swap" as="style" onload="this.rel = 'stylesheet'">
-    <link rel="preload" href="css/custom.css" as="style" onload="this.rel = 'stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Petit Formal Script&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Barlow&display=swap" as="style">
+    <link rel="preload" href="css/custom.css" as="style">
 
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -41,21 +41,7 @@
 	</script> -->
     <!-- GDPR CookieBot -->
     <!-- <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="7ea99b68-4fe1-4432-b2ac-0602635dd162" data-blockingmode="auto" type="text/javascript"></script> -->
-    <style>
-        .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
+    
     <!-- <script src="https://kit.fontawesome.com/fd0d4244f7.js" crossorigin="anonymous" defer></script> -->
 </head>
 
@@ -67,7 +53,7 @@
     <div class="parallax pt-4" id="pllax1">
         <div class="mb_parallax_overlay pt-4"></div>
         <div class="container-fluid ">
-            <div class="row" style="min-height: 15vw;">
+            <div class="row">
                 <div class="col-md-4 p-3 my-auto">
                     <h1 class="hptitle" id="pageHeadingDiv">Opening Hours</h1>
                 </div>
@@ -99,7 +85,7 @@
                 
                 <div class="row justify-content-center">
                     <div class=" col-lg-2 my-auto p-2">
-                        <img src="images/opening-hours.jpg" class="img-fluid" style="max-width: 50px;">
+                        <img src="images/opening-hours.jpg" class="img-fluid mw-50" alt="Opening Hours">
                     </div>
                     <div class=" col-lg-10">
                         <h5 class="card-title fw-bold">Blessington</h5>
@@ -113,7 +99,7 @@
 
                 <div class="row justify-content-center">
                     <div class=" col-lg-2 my-auto p-2">
-                        <img src="images/opening-hours.jpg" class="img-fluid" style="max-width: 50px;">
+                        <img src="images/opening-hours.jpg" class="img-fluid mw-50" alt="Opening Hours">
                     </div>
                     <div class=" col-lg-10">
                         <h5 class="card-title fw-bold">Ballymore Eustace</h5>
@@ -133,7 +119,7 @@
 
         <div class="p-3">
             <a href="https://www.kdoc.ie/">
-                <img class="img-fluid" src="images/k-doc.png">
+                <img class="img-fluid" src="images/k-doc.png" alt="KDOC">
             </a>
         </div>
 
@@ -144,8 +130,8 @@
     <!-- include the footer section -->
     <custominclude src="footer.html"></custominclude>
 
-    <script defer src="js/bootstrap.bundle.min.js"></script>
-    <script defer src="js/custom.js"></script>
+    <script type="text/javascript" defer src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" defer src="js/custom.js"></script>
 </body>
 
 </html>

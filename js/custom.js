@@ -4,7 +4,7 @@
 
 let boxElement;
 var animatedElements;
-var arrAnimAdded = [];      
+var arrAnimAdded = [];     
 
 // Set things up
 window.addEventListener("load", (event) => {
@@ -16,6 +16,14 @@ window.addEventListener("load", (event) => {
   createObserver();
 
 }, false);
+
+// to be tested: this was moved here for CSP security. Its purppose is to scroll
+// user to top of window once the google form is submitted.
+if (document.getElementById("googleFormsiFrme")) {
+  document.getElementById("googleFormsiFrme").addEventListener("onload", function() {
+    window.scrollTo(0,0);
+  });
+};
 
 function createObserver() {
   let observer;
